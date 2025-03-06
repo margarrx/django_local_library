@@ -13,4 +13,5 @@ urlpatterns = [
     # catalog/author/<id> — The detail view for the specific author with a primary key field of <id>. For example, the URL for the 11th author added to the list will be /catalog/author/11.
     path("author/<int:pk>", views.AuthorDetailView.as_view(), name="author-detail"),
     path("mybooks/", views.LoanedBooksByUserListView.as_view(), name="my-borrowed"),
+    path("borrowed/", views.LoanedBooksByAllUsersListView.as_view(), name="all-borrowed"),
 ]

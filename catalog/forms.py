@@ -1,10 +1,5 @@
 from django import forms
-
-
 import datetime
-
-from django import forms
-
 from django.core.exceptions import ValidationError
 from django.utils.translation import gettext_lazy as _
 
@@ -27,6 +22,7 @@ class RenewBookForm(forms.Form):
 
         # Remember to always return the cleaned data.
         return data
+
 
 # appx = to above
 # from django.forms import ModelForm

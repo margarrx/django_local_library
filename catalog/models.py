@@ -19,12 +19,7 @@ class Genre(models.Model):
         unique=True,
         help_text="Enter a book genre (e.g. Science Fiction, French Poetry etc.)",
     )
-    
-    id = models.CharField(
-        max_length=18,
-        unique=True,
-        help_text="Enter local ID",
-    )
+
     
 
     def __str__(self):
